@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Herro2</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Contrail One">
+</head>
+<body>
+<div id="screen">
+
+<!-- upper -->
+  <div id="header">
+<!-- Hero -->
+    <div class="hp-block hero-hp-block">
+      <div class="hp-bar">
+        <div id="hero-hp-hurt"></div>
+      </div>
+      <div class="hp-text">
+        <span id="hero-hp">130</span>
+        /
+        <span id="hero-max-hp">130</span>
+      </div>
+    </div>
+<!-- round number -->
+    <div id="round-num">10</div>
+<!-- Monster --> 
+    <div class="hp-block monster-hp-block">
+      <div class="hp-bar">
+        <div id="monster-hp-hurt"></div>
+      </div>
+      <div class="hp-text">
+        <span id="monster-hp">130</span>
+        /
+        <span id="monster-max-hp">130</span>
+      </div>
+    </div>  
+  </div><!-- upper -->
+
+<!-- lower -->
+  <div id="plane">
+<!-- Hero -->
+    <div id="hero-image-block">
+      <div class="skill-block">
+        <img src="images/skill.png" id="skill" class="skill-image">
+        <img src="images/heal.png" id="heal" class="heal-image">
+      </div>
+      <div class="character-block">
+        <img src="images/hero.png" class="character-image hero-image">
+        <img src="" style="display: none;" class="effect-image">
+        <span class="hurt-text"></span>
+      </div>
+    </div><!-- Hero -->
+
+<!-- Monster -->
+    <div id="monster-image-block">
+      <div class="character-block">
+        <img src="images/monster.png" class="character-image monster-image">
+        <img src="" style="display: none;" class="effect-image">
+        <span class="hurt-text"></span>
+      </div>
+    </div><!-- Monster -->
+
+<!-- restart game -->
+    <div id="dialog">
+      <div class="win-dialog">
+        <h2>你贏了！！！</h2>
+        <button onclick="location.reload();">再玩一次嗎？</button>
+      </div>
+      <div class="lose-dialog">
+        <h2>可惜！你輸了！！！</h2>
+        <button onclick="location.reload();">再接再厲，再拼一次？</button>
+      </div>
+    </div>
+  
+  </div><!-- id=plane -->
+
+</div>
+  
+<script src="js/index2.js"></script>
+</body>
+</html>
