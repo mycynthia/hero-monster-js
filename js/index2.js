@@ -86,8 +86,18 @@ class Hero extends BaseCharacter {
     this.hp += healHp;
     if(this.hp > this.maxHp) {
       this.hp = this.maxHp;
+      
     }
     this.updateHtml(this.hpElement ,this.hurtElement);
+    // 補充體力特效文字
+    this.element.getElementsByClassName("heal-text")[0].classList.add("healed");
+    this.element.getElementsByClassName("heal-text")[0].textContent = healHp;  
+    
+    var _this = this;
+    setTimeout(function(){
+      _this.element.getElementsByClassName("heal-text")[0].classList.remove("healed");
+      _this.element.getElementsByClassName("heal-text")[0].textContent = "";
+    },400);
   }
 }
 
@@ -110,7 +120,7 @@ function addHealEvent() {
           document.getElementsByClassName("skill-block")[0].style.display = "block";
         }      
       },500);
-    },100);
+    },300);
   }
 }
 addHealEvent();

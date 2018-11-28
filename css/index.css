@@ -135,6 +135,18 @@
   transition: bottom 500ms;
 }
 
+#hero-image-block .character-block .heal-text {
+  position: absolute;
+  font-size: 100px;
+  color: green;
+  width: 100%;
+  left: 0px;
+  bottom: 50px;
+  font-family:"monospace" ;
+  transition: bottom 500ms;
+}
+
+#hero-image-block    .character-block .heal-text.healed,
 #hero-image-block    .character-block .hurt-text.attacked,
 #monster-image-block .character-block .hurt-text.attacked {
   bottom: 150px;
